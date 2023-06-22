@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.mainContainer{
+    background-color: rgb(7, 1, 63);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainContainer h2{
+    color: bisque;
+}
+
+.box{
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    box-shadow: 1px 1px 20px yellow;
+    padding: 50px;
+    margin-top: 30px;
+}
+
+form label{
+    color: rgb(0, 217, 255);
+    font-size: larger;
+    font-weight: bold;
+}
+
+form input{
+    border: none;
+    background-color: rgba(0, 255, 183, 0.651);
+}
+
+form #temp{
+    width: 150px;
+    margin: 10px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+form #temp_diff{
+    width: 100px;
+    margin: 10px;
+    height: 30px;
+    border-radius: 10px;
+
+    /* padding: 10px; */
+}
+
+form #sub{
+    width: 100px;
+    margin: 10px;
+    height: 30px;
+    background-color: blanchedalmond;
+    border-radius: 20px;
+    color: rgb(255, 19, 141);
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+}
+#sub:hover{
+    background-color: rgb(50, 121, 243);
+    color: black;
+    transition: .5s;
+}
+
+.result{
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    box-shadow: 0px 0px 40px gray;
+    margin-top: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+}
+
+.result h3{
+    color: rgb(47, 255, 0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.result #resultContainer{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 224, 47);
+
+}

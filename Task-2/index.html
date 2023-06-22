@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TempCalc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+        <h2>Temperature Converter For Only °Celsius TO °Fahrenhite and Vica Versa.</h2>
+
+        <div class="box">
+            <form id="tempCalc" onsubmit="calculateTemp(); return false">
+                <label for="temp">Please Enter the Temperature You'd like to convert.</label>
+                <br>
+                <br />
+                <input type="number" name="temp" id="temp">
+
+                <select name="temp_diff" id="temp_diff">
+                    <option value="cel">°Celsius</option>
+                    <option value="fah">°Fahrenhite</option>
+                </select>
+                <br />
+
+
+                <input type="submit" name="temp" id="sub">
+                <br />
+
+                <div class="result">
+                    <h3>Result : </h3>
+                    <span id="resultContainer"></span>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
