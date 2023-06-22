@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Ubuntu:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Ubuntu:wght@500;700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgba(0, 28, 46, 0.973);
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Navbar */
+nav{
+    background-color: rgba(4, 68, 108, 0.701);
+    box-shadow: 0px 0px 10px seagreen;
+    /* border-radius: 20px; */
+    /* border: 2px solid red; */
+    top: 0;
+    position: sticky;
+    z-index: 10;
+    width: 100%;
+}
+
+.navContent{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+
+.logo{
+    color: aqua;
+    /* color: rgba(0, 28, 46, 0.973); */
+    font-size: 24px;
+    text-shadow: 0px 0px 20px chartreuse;
+
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.logo:hover{
+    cursor: pointer;
+    text-shadow: 0px 0px 30px rgb(197, 244, 150);
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items ul{
+    display: flex;
+    justify-content: center;
+}
+.items ul li{
+    margin: 15px;
+    padding: 15px;
+    /* text-decoration: none; */
+    font-size: 20px;
+    list-style: none;
+
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.items ul li a{
+    text-decoration: none;
+    color: aquamarine;
+}
+.items ul li a:hover{
+    color: rgb(223, 253, 30);
+    text-shadow: 0px 0px 30px cadetblue;
+}
+
+.dwnld button{
+    width: 120px;
+    cursor: pointer;
+    height: 45px;
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    color: aquamarine;
+    /* border: 2px solid cyan;
+    border-radius: 10px; */
+}
+.navContent button{
+    box-shadow: 0px 0px 10px rgb(223, 253, 30);
+
+    margin-left: 80px;
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+.navContent button:hover{
+    /* color: black; */
+    /* font-weight: bold; */
+    color: greenyellow;
+    transition: .5s;
+}
+
+
+
+
+/* All Page */
+.aboutContainer{
+    /* border: 2px solid snow; */
+    height: 100vh;
+    margin-top: 10px;
+}
+.txt .myName{
+    padding: 30px;
+
+    color: white;
+    animation: neon 5s infinite;
+    font-family: 'Noto Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+@keyframes neon {
+    0%, 39%, 41%, 59%, 61%, 100% {
+        text-shadow: 
+        white 0 0 10px,
+        #3affb0 0 0 55px,
+        #3affb0 0 0 70px;
+    }
+
+    /* 40%, 60%  {
+        text-shadow: none;
+    } */
+}
+
+/* Home Page */
+.homeClass{
+    height: 87vh;
+}
+
+.firstPage{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    color: antiquewhite;
+}
+.firstPage .content{
+    /* border: 2px solid greenyellow; */
+    width: 65%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstPage .photo{
+    /* border: 2px solid greenyellow; */
+    width: 25%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Text Page in Home */
+.content .txt{
+    /* border: 2px solid black; */
+    /* border-radius: 20px; */
+    /* box-shadow: 0px 0px 20px gray; */
+    color: cyan;
+    text-align: center;
+    /* padding: 12px 0px; */
+}
+
+.content .txt p{
+    margin: 15px;
+    font-size: 22px;
+    line-height: 24px;
+    color: whitesmoke;
+}
+
+.content .txt h1{
+    margin: 25px;
+    font-size: 50px;
+    word-spacing: 5px;
+    text-shadow: 0px 0px 60px gold;
+    
+}
+
+.content .txt h2{
+    margin: 35px;
+    font-size: 34px;
+}
+
+/* Image  */
+.photo .img{
+    /* background-color: rgb(132, 238, 238); */
+    width: 30vw;
+    height: 70vh;
+    background-image: url(images/Om.JPG);
+    background-color: #02fbff23;
+    background-blend-mode: overlay;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* animation: animate 2s linear infinite; */
+}
+@keyframes animate{
+    0%{
+        border: 2px solid springgreen;
+        border-radius: 50%;
+    }
+    25%{
+        border: 2px solid rgb(12, 62, 37);
+        
+    }
+    50%{
+        border: 2px solid rgb(20, 15, 153);
+        
+    }
+    75%{
+        border: 2px solid rgb(255, 0, 217);
+      
+    }
+    100%{
+        border: 2px solid rgb(136, 255, 0);
+      
+    }
+}
+
+
+/* shape divider */
+.custom-shape-divider-bottom-1678427841 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1678427841 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 172px;
+}
+
+.custom-shape-divider-bottom-1678427841 .shape-fill {
+    /* fill: #ffff; */
+    fill: rgba(255, 255, 255, 0.395);
+
+}
+
+
+
+/* About Page */
+.secondPage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 190px; */
+    /* border: 2px solid green; */
+    height: 100vh;
+}
+
+.heading{
+    /* border: 2px solid black; */
+    margin: 50px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(223, 253, 30);
+
+
+}
+.heading h1{
+    margin: 0;
+    padding: 8px;
+    font-size: 48px;
+    
+}
+.heading p{
+   
+    font-size: 22px;
+}
+
+.secondPage .cards{
+    /* margin: 60px 70px; */
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    /* align-items: center; */
+    height: 430px;
+}
+.card{
+    /* border: 2px solid yellow; */
+    width: 33%;
+    margin: 18px;
+    /* padding: 8px; */
+    border-radius: 20px;
+}
+.card:hover{
+    box-shadow: 0px 0px 30px #0abfbc;
+    transition: .2s;
+}
+
+.cards #card-1{
+    background-image: linear-gradient(45deg, #b3ffabb6, #12fff7bb);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.card .details{
+    padding: 0px 20px;
+}
+.card .info{
+    font-size: 18px;
+    text-align: center;
+}
+.card .social{
+    /* border: 2px solid greenyellow; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 30px; */
+    /* padding: 6px; */
+}
+.sm img{
+    border-radius: 10px;
+}
+.sm img:hover{
+    box-shadow: 2px 2px 12px rgb(4, 20, 250);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.cards #card-2{
+    background-image: linear-gradient(45deg, #fb00ffc8, #00dade97);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.card h2{
+    text-align: center;
+    padding: 20px;
+}
+
+.card #myself{
+    /* padding: 4px; */
+    margin-top: 15px;
+    line-height: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card .btn{
+font-family: 'Unbounded', cursive;
+    display: block;
+    margin: 30px auto;
+    /* font-weight: bolder; */
+    padding: 12px;
+    width: 150px;
+    border: 2px solid orangered;
+    
+}
+.card .btn:hover{
+    background-image: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+    transition: .5s;
+    border-radius: 30px;
+    color: cyan;
+}
+
+
+
+/* copied code */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height:100%;
+    /* border: 1px solid #f1f1f1; */
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+
+  .flip-card .myClass{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  /* .flip-card-front img{
+    background-color: #02fbff23;
+    background-blend-mode: overlay;
+  } */
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgba(30, 143, 255, 0.238);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+.card .items{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* border-radius: 10px; */
+    color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+
+    /* padding: 6px; */
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; */
+    /* visibility: hidden; */
+    /* background: linear-gradient(rgba(0, 0, 0, 0.655),rgba(0, 0, 0, 0.655)); */
+
+
+}
+/* .card .items:hover{
+    overflow: hidden;
+    visibility: hidden;
+} */
+/* .items .intro{
+    border: 2px solid red;
+    padding: 6px;
+} */
+
+/* .items .text{
+    border: 2px solid red;
+    margin: 25px 0px;
+    padding: 6px;
+
+} */
+
+/* .items .images{
+    border: 2px solid red;
+    font-size: 20px;
+    margin: 15px 0px;
+} */
+
+
+/* Projects Style */
+
+.aboutContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.aboutContainer .work{
+    color: rgb(223, 253, 30);
+    text-shadow: 0px 0px 20px rgb(223, 253, 30);
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+.projectBox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+}
+.grid{
+    height: 300px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid rgb(197, 244, 150); */
+    position: relative;
+    border-radius: 20px;
+}
+.grid .text{
+    color: rgb(223, 253, 30);
+    font-size: 26px;
+    border-radius: 20px;
+    
+    /* z-index: -1; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.707);
+
+    height: 300px;
+    width: 450px;
+    opacity: 0;
+    font-weight: bolder;
+    position: relative;
+    transition: 0.5s;
+}
+.grid .text .myPara{
+    color: wheat;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid .text:hover{
+    opacity: 1;
+}
+.grid img{
+    border-radius: 20px;
+    position: absolute;
+    height: 300px;
+    width: 450px;
+}
+.grid img:hover{
+    opacity: 0.2;
+}
+.grid .myBtn button{
+    /* width: 100px; */
+    border: none;
+    background-color: teal;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin: 0 20px;
+}
+.grid .myBtn a{
+    /* color: red; */
+    /* border: 2px solid red; */
+    /* width: 100px; */
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #00ffee;
+}
+
+
+
+/* Contact Page Style */
+.contactPage{
+    background-color: rgba(116, 228, 243, 0.854); 
+    color: rgb(247, 44, 102);
+    height: 90vh;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contactPage .contact{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.data{
+    /* border: 2px solid red; */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.data h1{
+    margin: 10px;
+    font-size: 40px;
+}
+.data p{
+    margin: 10px;
+    font-size: 24px;
+}
+.data .mail{
+    font-size: 22px;
+    /* border: 2px solid red; */
+    /* border-radius: 20px; */
+    padding: 12px;
+
+    box-shadow: 0px 0px 8px rgb(250, 0, 0) inset;
+}
+.contactPage .rightSide .txt{
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-weight: bold
+}
+
+.contactPage .formPage{
+    /* border: 2px solid red; */
+    height: 550px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contactPage form .field{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactPage form input{
+    /* border: 2px solid red; */
+    /* display: block; */
+    color: #0b003bfe;
+    font-weight: bold;
+    margin: 15px 0;
+    /* margin-left: 100px; */
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    /* border-radius: 8px; */
+    background: transparent;
+    border-bottom: 2px solid red;
+    outline: none;
+    /* text-align: center; */
+    padding: 10px;
+
+}
+.contactPage form input::placeholder{
+    color: rgb(112, 108, 108);
+    font-size: 16px;
+    /* font-weight: bold; */
+}
+
+.contactPage form textarea{
+    margin: 20px;
+    font-size: 18px;
+    padding: 10px;
+    color: #0eff02;
+    /* margin: 20px 0; */
+    /* margin-left: 50px; */
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    /* border-bottom: 2px solid red; */
+    outline: none;
+}
+.contactPage .btn{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contactPage .btn button{
+    /* margin: 20px auto; */
+    width: 40%;
+    height: 40px;
+    border: none;
+    background-color: #f24f4f;
+    font-size: 22px;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+footer .foot{
+    color: wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+
+
+
+
+/* Responsive */
+.burger{
+    display: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.burger div{
+    height: 3px;
+    width: 25px;
+    background: rgba(216, 152, 152, 0.829);
+    margin: 4px;
+    transition: transform 0.2s ease-in;
+}
+/* Screen for tablet */
+@media only screen and (max-width: 960px) {
+    .link ul{
+        width: 400px;
+    }
+
+}
+
+
+/* Screen for mobile */
+@media screen and (max-width: 700px){
+
+    body{
+        overflow-x: hidden;
+        
+    }
+
+    .navContent .items li{
+        /* margin: 0; */
+        font-size: 24px;
+    }
+    .navContent button{
+        margin-left: 0;
+        margin-top: 80px;
+        font-size: 22px;
+    }
+
+    .link{
+        position: absolute;
+        border-top-left-radius: 40px;
+        border-bottom-left-radius: 40px;
+        background-color: rgb(32, 115, 175);
+        top: 8vh;
+        right: 0px;
+        height: 85vh;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .link ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: 92vh; */
+       
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .link li{
+        opacity: 1;
+    }
+}
+.nav_active{
+    transform: translateX(0%);
+}
+
+
+/* This is for burger animation */
+.toggle .b1{
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.toggle .b2{
+    display: none;
+}
+
+.toggle .b3{
+    transform: rotate(-45deg);
+
+}
+
+
+@media screen and (max-width:789px) {
+    .firstPage{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        color: antiquewhite; */
+    }
+    .firstPage .content{
+        width: 100%;
+    }
+}
+
+
